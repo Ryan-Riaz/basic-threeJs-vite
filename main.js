@@ -116,10 +116,10 @@ const animate = function () {
     // group.rotateY(0.001 * Math.PI);
 
     const time = clock.getElapsedTime();
-    group.rotation.y = time * 0.1;
+    group.rotation.x = time * 0.1;
 
-    // const ratio = (mouseX / window.innerWidth - 0.5) * 2;
-    // group.rotation.y = ratio * Math.PI;
+    const ratio = (mouseX / window.innerWidth - 0.5) * 2;
+    group.rotation.y = ratio * Math.PI;
 
     // controls.update();
 
